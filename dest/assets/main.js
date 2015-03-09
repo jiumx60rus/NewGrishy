@@ -5,7 +5,8 @@
 
 (function() {
   $("#buttonMenu").on("click", function() {
-    return console.log("Test");
+    $("#buttonMenu").toggleClass("buttonMenuOpen");
+    return $("#menu").toggleClass("menuOpen");
   });
 
 }).call(this);

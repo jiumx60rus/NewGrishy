@@ -1,6 +1,11 @@
 #header
-	padding-bottom 72px
-	padding-top 60px
+	padding 25px 0
+	
+	background #fff
+	background-image url("/assets/img/bgHeader.jpg")
+	background-size cover
+	background-position center top
+	background-repeat no-repeat
 	
 #buttonMenu
 	position fixed
@@ -11,12 +16,82 @@
 	border-radius 50%
 	z-index 1000
 	font-size 22px
+	
 	padding 0
 	outline 0
 	border 0
-	text-align center
-	vertical-align middle
+	
 	background-color #E64946
 	color #FFF
 	box-shadow rgba(0,0,0,0.2) 0 0 0 3px
-	transition all .3s linear
+	transition all .2s linear
+	
+	&:hover
+		background-color #fff
+		color #E64946
+		
+#menu
+	transition all .2s linear
+	left -250px
+	position fixed
+	
+#menu ul
+	transition all .2s linear
+	width 150px
+	margin-top 60%
+	
+#menu ul li
+	transition all .2s linear
+	list-style none
+	margin-left -40px
+	
+
+	&:hover
+		background: #fff;	
+		padding-left: 10px;
+		width: 110%;
+		
+#menu ul li a
+	transition all .2s linear
+	padding .8em
+	display block
+	color #fff
+	background rgba(0,0,0, 0.6)	
+
+	font-size .9em
+	font-weight normal
+	text-decoration none
+	text-transform uppercase
+	
+	margin-bottom 1px
+	
+	&:hover
+		color: #E64946;
+		background-color: #fff;
+
+// Открытое/Закрытое
+.buttonMenuOpen
+	background-color #fff !important
+	color #E64946 !important
+
+.menuOpen
+	left 0px !important
+	
+#menu ul li:nth-child(1) {
+	width: 120px;
+}
+
+#menu ul li:nth-child(2) {
+	width: 150px;
+}
+#menu ul li:nth-child(3) {
+	width: 160px;
+}
+
+#menu ul li:nth-child(4) {
+	width: 140px;
+}
+
+#menu ul li:nth-child(5) {
+	width: 120px;
+}

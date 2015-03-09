@@ -9,10 +9,32 @@ html
 		link(href='/assets/style.css', rel='stylesheet')
 
 	body
-		main#content
-			header#header
-				.inner: h1 Test
+	
+		header#header
+			button#buttonMenu: i.fa.fa-bars.fa-fw
+			
 
+			nav#menu: ul
+				li: a(href="/")
+					i.fa.fa-home.fa-sm1.fa-fw
+					|   Home
+				li: a(href="/")
+					i.fa.fa-home.fa-sm1.fa-fw
+					|   About
+				li: a(href="/")
+					i.fa.fa-home.fa-sm1.fa-fw
+					|   Project
+				li: a(href="/")
+					i.fa.fa-home.fa-sm1.fa-fw
+					|   Hire me
+
+
+			#logo
+				span Блог о прогаммировании
+				a(href="/") Grishy.ru
+				span — Web, Gamedev, Programming —
+
+		main#content
 			block content
 
 	script(src='/assets/main.js')

@@ -1,3 +1,5 @@
 $("#buttonMenu").on "click", ->
-	console.log "Test"
-  # $("#navCollapse").slideToggle("normal")
+
+  # Menu
+    $("#buttonMenu").toggleClass("buttonMenuOpen")
+    $("#menu").toggleClass("menuOpen")
