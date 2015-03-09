@@ -3,10 +3,11 @@ html
 	head
 		title Grishy
 
-		meta(charset='utf-8')
+		meta(charset="utf-8")
 		meta(meta name="viewport" content="width=device-width, initial-scale=1")
 
-		link(href='/assets/style.css', rel='stylesheet')
+		link(href="/assets/style.css", rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic", rel="stylesheet")
 
 	body
 	
@@ -17,16 +18,16 @@ html
 			nav#menu: ul
 				li: a(href="/")
 					i.fa.fa-home.fa-sm1.fa-fw
-					|   Home
+					|   Главная
 				li: a(href="/")
 					i.fa.fa-home.fa-sm1.fa-fw
-					|   About
+					|   О блоге
 				li: a(href="/")
 					i.fa.fa-home.fa-sm1.fa-fw
-					|   Project
+					|   Проекты
 				li: a(href="/")
 					i.fa.fa-home.fa-sm1.fa-fw
-					|   Hire me
+					|   Связаться
 
 
 			#logo
@@ -34,9 +35,11 @@ html
 				a(href="/") Grishy.ru
 				span — Web, Gamedev, Programming —
 
-		main#content
+		main#content(role="main")
 			block content
+		
+		footer#footer
+			
+	script(src="/assets/main.js")
 
-	script(src='/assets/main.js')
-
-	script(src='//localhost:35729/livereload.js')
+	script(src="//localhost:35729/livereload.js")
