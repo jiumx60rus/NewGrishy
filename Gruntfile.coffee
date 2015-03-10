@@ -12,6 +12,7 @@ module.exports = (grunt) ->
       compile:
         files:
           "dest/index.html": "src/jade/index.jade"
+          "dest/page.html": "src/jade/page.jade"
 
     # stylus
     stylus:
